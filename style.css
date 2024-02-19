@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Questrial&display=swap');
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  font-family: Questrial;
+  justify-content: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  color: #ffffff;
+  padding: 1rem;
+  align-items: center;
+  background: rgba(0, 0, 0.5, 0.4);
+}
+
+nav {
+  align-items: center;
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  
+}
+
+.nav-links a:hover {
+  transform: scale(1.5);
+}
+
+
+.hero {
+  background: url('/fotos/IMG_20190219_110225166.jpg') center/cover no-repeat;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.more h1 {
+  font-size: 8vw;
+  margin-bottom: 1rem;
+}
+.more p{
+  font-size: 3vw;
+}
+
+.about{
+  margin-top: 10%;
+  margin: 5%;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.text{
+  width: 50%;
+  font-size: 2vw;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .about {
+    display: block;
+
+  }
+}
+.services{
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5%;
+}
+
+.services ul {
+  list-style: none;
+  
+}
+
+.contact{
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 10%;
+  border-color: #c7c7c7;
+  box-shadow: 0px 0px 10px rgba(0, 0, 2, 0.5);    
+  
+}
+
+footer{
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  
+}
+
+.list-imagens{
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;  
+}
+
+.list-imagens li{
+  height: 300px;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 2, 0.5);
+  text-align: center;
+  align-items: center;  
+}
+
+.item1{
+  background-image: url('/fotos/');
+}
+.instagram-media{
+  width: 150px;
+}
+.socials{
+  text-align: center;
+  margin: auto 10%;
+  margin-top: 10%;
+  background-color: #FFFAFA;
+  box-shadow: 0px 0px 10px rgba(0, 0, 2, 0.5);
+  padding: 5%; 
+   
+}
+
+.socials div{
+  display: flex;
+  margin: auto; 
+  justify-content: center; 
+}
+
+.contactButton {
+  background: #3cb371;
+  color: white;
+  padding: 0.5em;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 1em;
+  border: none;
+  letter-spacing: 0.05em;
+  align-items: center;
+  box-shadow: inset 0 0 1.8em -0.7em #2e8b57;
+  overflow: hidden;
+  position: relative;
+  height: 3em;
+  padding-inline: 2em;
+  margin-top: 2%;
+}
+
+
+.contactButton:hover {
+  letter-spacing: 3px;
+  background-color: #007533;
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(0,0,0) 0px 12px 44px 0px;
+}
+
+.contactButton:active {
+  letter-spacing: 3px;
+   background-color: #007533;
+   color: hsl(0, 0%, 100%);
+   box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+   transform: translateY(10px);
+   transition: 100ms;
+}
+
