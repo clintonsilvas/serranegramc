@@ -370,31 +370,40 @@ textarea{
   border-radius: 10px;
   margin: 15px;
   width: 90%;
-  height: 4vh;
+  height: 3vh;
   
 }
-.vendedor {
+.orcamento{
   flex: 1;
   background: rgba(0, 0, 0.5, 0.4);
   border-radius: 10px;
-  padding-left: 30px;
   margin: 10px;
   align-items: center;
+  display: inline-block;
+  
+}
+.media{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.media ul{
+  padding: 20px;
+  list-style: none;
+
 }
 
 @media screen and (max-width: 768px){
   .contact {
-    text-align: center;
     padding:20px;
-    background-color: #397d54;
-    color: white;
-  }
-  .content {
-    flex-direction: column;
     
   }
-  .vendedor {
-    margin-top: 20px;
+  .content {
+    flex-direction: column;    
+  }
+  form input{
+    height: 2vh;
     
   }
   
@@ -409,21 +418,3 @@ footer {
 
 }
 
-
-/*.socials {
-  text-align: center;
-  background-color: #73c088;
-  padding: 5%;
-
-}
-
-.socials div {
-  display: flex;
-  margin: auto;
-  justify-content: center;
-}
-@media screen and (max-width: 768px){
-  .socials {
-    justify-content: center;
-  }
-}*/
