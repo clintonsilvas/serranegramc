@@ -1,33 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link rel="stylesheet" href="style.css">
-  
   <title>Serra Negra Materiais</title>
-  <script src="script.js"></script>
+  <link rel="icon" href="/fotos/Group 7.svg" type="image/x-icon">
 </head>
 
 <body>
   <section class="hero">
     <header>
-      <div class="icon-container">
-        <span class="icon">☰</span>
-      </div>
       <nav>
-        <div class="nav-links">
-          <a href="#">INÍCIO</a>
-          <a href="#">SOBRE NÓS</a>
-          <img src="/fotos/Group 7.svg" width="100px" height="100px">
-          <a href="#">SERVIÇOS</a>
-          <a href="#">CONTATO</a>
+        <div class="logo">
+          <img src="/fotos/Group 7.svg" width="70vw" height="70vh">
         </div>
+        <div class="mobile-menu" id="menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+
+        <ul class="nav-list">
+          <li><a href="#">INÍCIO</a></li>
+          <li><a href="#sobre-nos">SOBRE NÓS</a></li>
+          <li><img src="/fotos/Group 7.svg" width="100px" height="100px"></li>
+          <li><a href="#servicos">PRODUTOS</a></li>
+          <li><a href="#contato">CONTATO</a></li>
+        </ul>
       </nav>
+
     </header>
 
-    <section class="more">
+
+    <section class="more" id="">
       <h1>Bem-vindo <br>à Serra Negra Materiais para Construção </h1>
       <p>Tudo para sua obra!</p>
       <button class="contactButton">
@@ -36,7 +44,7 @@
     </section>
   </section>
 
-  <section class="about">
+  <section class="about" id="sobre-nos">
     <div class="text">
       <h2>Sobre Nós</h2>
       <h3>A empresa</h3>
@@ -49,13 +57,12 @@
       </p>
     </div>
     <section class="imagens-conteiner">
-      <img src="/fotos/IMG-20221224-WA0007_Original.jpeg" style=" ">
-      <!--<img src="/fotos/098928ca-3d9e-4a2a-b176-63cf4f117989.jpg" style="position: absolute; right: 20px; top: 20px; width: 500px; height: 300px;">-->
+
     </section>
 
   </section>
 
-  <section class="services">
+  <section class="services" id="servicos">
     <h2>Nossos Produtos</h2>
     <ul class="list-imagens">
       <li style="background-image: url(/fotos/bloco.jpg);">
@@ -113,29 +120,12 @@
   </section>
   -->
 
-  <section class="contact">
+  <section class="contact" id="contato">
     <h2>Entre em Contato</h2>
     <p>Estamos ansiosos para ouvir de você. Entre em contato conosco para obter mais informações sobre nossos serviços.
     </p>
 
-    <div class="content">
-      <section class="forms">        
-        <h3>Entramos em contato:</h3>
-        <form action="enviar_email.php" method="POST">
-                 <input type="text" id="nome" name="nome" required placeholder="Nome" ><br>
-
-          
-          <input type="email" id="email" name="email" required placeholder="cliente@email.com"><br>
-
-          
-          <input type="tel" id="telefone" name="telefone" placeholder="+55 (99) 99999-9999"><br>
-
-                    <textarea id="mensagem" name="mensagem" required placeholder="Digite aqui sua mensagem."></textarea><br>
-
-          <button type="submit" class="btn">Enviar</button>
-        
-        </form>
-      </section>
+    <div class="content">     
 
       <section class="vendedor">
         <h3>Contate nossos vendedores:</h3>
@@ -154,6 +144,16 @@
           </tr>
         </table>
       </section>
+      <section class="forms">
+        <h3>Entramos em contato:</h3>
+        <form action="enviar_email.php" method="POST">
+          <input type="text" id="nome" name="nome" required placeholder="Nome"><br>
+          <input type="email" id="email" name="email" required placeholder="cliente@email.com"><br>
+          <input type="tel" id="telefone" name="telefone" placeholder="+55 (99) 99999-9999"><br>
+          <textarea id="mensagem" name="mensagem" required placeholder="Digite aqui sua mensagem."></textarea><br>
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+      </section>
     </div>
   </section>
 
@@ -164,7 +164,7 @@
   <footer>
     <p>&copy; 2024 Serra Negra Materiais para Construção LTDA. Todos os direitos reservados.</p>
   </footer>
-  <script src="script.js"></script>
+  <script src="mobile-navbar.js"></script>
 </body>
 
 </html>
