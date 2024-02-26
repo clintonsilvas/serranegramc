@@ -79,62 +79,77 @@
       </li>
     </ul>
   </section>
+  <section class="mapBox">
+    <p>Onde Estamos</p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1105.4706243421788!2d-46.14424220164877!3d-21.257801416978133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDE1JzI5LjUiUyA0NsKwMDgnMzcuOSJX!5e0!3m2!1spt-BR!2sbr!4v1708806406260!5m2!1spt-BR!2sbr"
+      style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </section>
 
   <section class="contact" id="contato">
     <h2>Entre em Contato</h2>
     <p>Estamos ansiosos para ouvir de você. Entre em contato conosco para obter mais informações sobre nossos serviços.
     </p>
-
-    <div class="content">
-      <section class="orcamento">
-        <p>Faça um orçamento</p>        
-        <div class="media">
-          <div>
-            <img src="/fotos/Group 7.svg" width="100vw" height="100vh">
-            <ul>
-              <a href="https://www.instagram.com/serranegra.mc/" target="_blank">
-                <img src="/fotos/insta.jpg" width="30vw" height="30vw" alt="Instagram">
-              </a>
-              <a href="https://www.facebook.com/Serra.negra.mc1990" target="_blank">
-                <img src="/fotos/face.jpg" width="30vw" height="30vw" alt="Facebook">
-              </a>
-            </ul>
-          </div>
-          <div class="infos">
-            <ul>
-              <li>
-                Avenida da Saudade, 49, <br> Cruzeiro Alterosa/MG
-              </li>
-              <li>
-                (35) 3294-1140
-              </li>
-              <li>
-                (35) 3294-2204
-              </li>
-            </ul>
-          </div>
-
-        </div>
-
-      </section>
-      <section class="forms" >
-        <p>Entramos em contato:</p>
-        <form action="enviar_email.php" method="POST" netlify>
-          <input type="text" id="nome" name="nome" required placeholder="Nome"><br>
-          <input type="email" id="email" name="email" required placeholder="cliente@email.com"><br>
-          <input type="tel" id="telefone" name="telefone" placeholder="+55 (99) 99999-9999"><br>
-          <textarea id="mensagem" name="mensagem" required placeholder="Digite aqui sua mensagem."></textarea><br>
-          <button type="submit" class="btn">Enviar</button>
-        </form>
-      </section>
+    <section class="forms">
+      <p>Entramos em contato:</p>
+      <form action="enviar_email.php" method="POST">
+        <input type="text" id="nome" name="nome" required placeholder="Nome"><br>
+        <input type="email" id="email" name="email" required placeholder="cliente@email.com"><br>
+        <input type="tel" id="telefone" name="telefone" placeholder="+55 (99) 99999-9999"><br>
+        <textarea id="mensagem" name="mensagem" required placeholder="Digite aqui sua mensagem."></textarea><br>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
     </div>
   </section>
 
-
-
-
-
   <footer>
+    <div class="content">
+      <section class="redes">
+        <h2>Redes Sociais</h2>
+        <ul>
+          <li> <a href="https://www.instagram.com/serranegra.mc/" target="_blank">
+              <img src="/fotos/insta.jpg" width="30vw" height="30vw" alt="Instagram">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/Serra.negra.mc1990" target="_blank">
+              <img src="/fotos/face.jpg" width="30vw" height="30vw" alt="Facebook">
+            </a>
+          </li>
+
+        </ul>
+
+      </section>
+      <section class="media">
+        <h2>Endereço</h2>
+        <ul>
+          <li>
+            Avenida da Saudade, 49, <br> Cruzeiro Alterosa/MG
+          </li>
+        </ul>
+        <h2>Horario de Funcionamento</h2>
+        <ul>
+          <li>Segunda a Sexta</li>
+          <li>6:30 - 17:30</li>
+          <li>Sabados</li>
+          <li>6:30 - 11:30</li>
+      </section>
+      <section class="fones">
+        <h2>Fones</h2>
+        <ul>
+          <li> 35 3294-1140 </li>
+          <li> 35 3294-2204</li>
+          <li> 35 99877-9281</li>
+          <li> 35 99835-8053</li>
+        </ul>
+
+      </section>
+
+
+    </div>
+    <hr>
     <p>&copy; 2024 Serra Negra Materiais para Construção LTDA. Todos os direitos reservados.</p>
   </footer>
   <script src="mobile-navbar.js"></script>
