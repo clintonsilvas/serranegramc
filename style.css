@@ -143,7 +143,7 @@ nav a:hover {
 }
 
 .hero {
-  background: url('/fotos/IMG_20190219_110225166.jpg') center/cover no-repeat;
+  background: url('C:/Users/clint/source/repos/clintonsilvas/serranegramc/fotos/hero.jpg') center/cover no-repeat;
   text-align: center;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -238,7 +238,7 @@ nav a:hover {
   position: relative;
   width: 50%;
   border-color: #c7c7c7;
-  background-image: url(/fotos/func.jpeg);
+  background-image: url(C:/Users/clint/source/repos/clintonsilvas/serranegramc/fotos/func.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
