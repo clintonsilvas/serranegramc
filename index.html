@@ -7,152 +7,344 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link rel="stylesheet" href="style.css">
   <title>Serra Negra Materiais</title>
-  <link rel="icon" href="C:/Users/clint/source/repos/clintonsilvas/serranegramc/fotos/Group 7.svg" type="image/x-icon">
-</head>
+  <link rel="icon" href="fotos/Group 7.svg" type="image/x-icon">
+  <meta name="keywords" content="construção, obras, material, cimento, tubo, ">
+  <link rel="icon" href="img/logo.svg" type="image/x-icon">
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="fontawesome/css/all.css" type="text/css">
 
+  <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+  <!-- Progress Bar -->
+  <script src="js/progressbar.min.js"></script>
+  <!-- Parallax -->
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 <body>
-  <section class="hero">
-    <header>
-      <nav>
-        <div class="logo">
-          <img src="C:/Users/clint/source/repos/clintonsilvas/serranegramc/fotos/Group 7.svg" width="70vw" height="70vh">
+  
+  <header>
+    <div class="container" id="nav-container">
+      <!-- add essa class -->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <img id="logo" src="img/logo.svg" alt="Serra Negra Materiais para Construção  "> Serra Negra Materiais 
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" id="home-menu" href="#about-area">Home</span></a>
+            <a class="nav-item nav-link" id="about-menu" href="#about-area">Sobre nós</a>
+            <a class="nav-item nav-link" id="services-menu" href="#services-area">Produtos</a>
+            <a class="nav-item nav-link" id="data-menu" href="#data-area">Dados</a>
+            <a class="nav-item nav-link" id="tema-menu" href="#team-area">Time</a>
+            <a class="nav-item nav-link" id="contact-menu" href="#contact-area">Contato</a>
+          </div>
         </div>
-        <div class="mobile-menu" id="menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-
-        <ul class="nav-list">
-          <li><a href="#">INÍCIO</a></li>
-          <li><a href="#sobre-nos">SOBRE NÓS</a></li>
-          <li><img src="C:/Users/clint/source/repos/clintonsilvas/serranegramc/fotos/Group 7.svg" width="100px" height="100px"></li>
-          <li><a href="#servicos">PRODUTOS</a></li>
-          <li><a href="#contato">CONTATO</a></li>
-        </ul>
       </nav>
-
-    </header>
-
-
-    <section class="more" id="">
-      <h1>Bem-vindo <br>à Serra Negra Materiais para Construção </h1>
-      <p>Tudoo para sua obra!</p>
-      <button class="contactButton">
-        Saiba Mais
-      </button>
-    </section>
-  </section>
-
-  <section class="about" id="sobre-nos">
-    <div class="text">
-      <h2>Sobre Nós</h2>
-      <h3>A empresa</h3>
-      <p>Serra Negra Materiais para Construção, desde 10/01/1990 atua no ramo de venda de materiais de construção em
-        geral, localizada no Município de Alterosa, Sul de Minas Gerais.
-
-        Fundada por Waldecy Cândido Fonseca e Cézar José da Silva , naturais de Alterosa, comandaram a empresa por 5
-        anos. Depois, que empre atuando no comércio, como empreendedores adquiriram a SERRA NEGRA
-        MATERIAIS PARA CONSTRUÇÃO, que tem esse nome pelo fato de Alterosa ser conhecida por São Joaquim da Serra Negra.
-      </p>
     </div>
-    <section class="imagens-conteiner">
+  </header>
+  <main>
+    <div class="container-fluid">
+      <!-- slider -->
+      <div id="mainSlider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+          <li data-target="#mainSlider" data-slide-to="1"></li>
+          <li data-target="#mainSlider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/hero.jpg" class="d-block w-100" alt="Fachada da empresa">
 
-    </section>
+            <!-- tirar classe d-none -->
 
-  </section>
-
-  <section class="services" id="servicos">
-    <h2>Nossos Produtos</h2>
-    <ul class="list-imagens">
-      <li style="background-image: url(C:/Users/clint/source/repos/clintonsilvas/serranegramc/fotos/bloco.jpg);">
-        <h2> Blocos de Concreto</h2>
-      </li>
-      <li style="background-image: url(C:/Users/clint/source/repos/clintonsilvas/serranegramc/fotos/laje-pre-moldada.jpg);">
-        <h2>Lajes Pré-Moldadas</h2>
-      </li>
-      <li style="background-image: url(C:/Users/clint/source/repos/clintonsilvas/serranegramc/fotos/tubo.jpg);">
-        <h2>Tubos e Conexoes</h2>
-      </li>
-      <li style="background-image: url(C:/Users/clint/source/repos/clintonsilvas/serranegramc/fotos/acabam.png);">
-        <h2>Itens de Acabamento </h2>
-      </li>
-    </ul>
-  </section>
-  <section class="mapBox">
-    <p>Onde Estamos</p>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1105.4706243421788!2d-46.14424220164877!3d-21.257801416978133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDE1JzI5LjUiUyA0NsKwMDgnMzcuOSJX!5e0!3m2!1spt-BR!2sbr!4v1708806406260!5m2!1spt-BR!2sbr"
-      style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-  </section>
-
-  <section class="contact" id="contato">
-    <h2>Entre em Contato</h2>
-    <p>Estamos ansiosos para ouvir de você. Entre em contato conosco para obter mais informações sobre nossos serviços.
-    </p>
-    <section class="forms">
-      <p>Entramos em contato:</p>
-      <form action="enviar_email.php" method="POST">
-        <input type="text" id="nome" name="nome" required placeholder="Nome"><br>
-        <input type="email" id="email" name="email" required placeholder="cliente@email.com"><br>
-        <input type="tel" id="telefone" name="telefone" placeholder="+55 (99) 99999-9999"><br>
-        <textarea id="mensagem" name="mensagem" required placeholder="Digite aqui sua mensagem."></textarea><br>
-        <button type="submit" class="btn">Enviar</button>
-      </form>
-    </section>
+            <div class="carousel-caption d-md-block">
+              <h2>Quer construir sua casa?</h5>
+              <p>Conte conosco, temos mais de 34 anos de mercado para te ajudar.</p>
+              <a href="#contact-area" class="main-btn">Contate-nos</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/frente.jpg" class="d-block w-100" alt="Fachada da empresa">
+            <div class="carousel-caption d-md-block">
+              <h2>Está querendo tirar o projeto do papel?</h5>
+              <p>Nossa equipe de vendedores está pronta para lhe atender.</p>
+              <a href="#contact-area" class="main-btn">Entre em contato</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/func.jpeg" class="d-block w-100" alt="Funcionários da empresa">
+            <div class="carousel-caption d-md-block">
+              <h2>Está buscando melhores precos na hora de construir?</h5>
+              <p>Faça um orçamento e ajuremos voce a escolher a melhor opção.</p>
+              <a href="#contact-area" class="main-btn">Entre em contato</a>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Sobre a empresa -->
+      <div id="about-area">
+        <div class="container">
+            <div class="row">
+              <div class="col-12"> 
+                <h3 class="main-title">Sobre nós</h3>
+              </div>
+              <div class="col-md-6">
+                <img class="img-fluid" src="img/func.jpeg" alt="Funcionários da empresa">
+              </div>
+              <div class="col-md-6">
+                <h3 class="about-title">Há mais de 34 anos no mercado da constução civil</h3>
+                <p>Sempre trabalhando com ética e buscando entregar o melhor a seus clientes.</p>
+                <p>Da base ao acabamento, garantimos qualidade e excelência em nossos produtos. </p>
+                <p>Honrando nosso compromisso com você  liente.</p>
+                <p>Veja outros diferenciais:</p>
+                <ul id="about-list">
+                  <li><i class="fas fa-check"></i> Produtos de Qualidade </li>
+                  <li><i class="fas fa-check"></i> Preço Justo</li>
+                  <li><i class="fas fa-check"></i> Atendimento personalizado </li>
+                  <li><i class="fas fa-check"></i> Entrega rápida</li>
+                  <li><i class="fas fa-check"></i> Facilidade no Pagamento</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- Serviços da empresa -->
+      <div id="services-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+                <h3 class="main-title">Nossos Produtos</h3>
+            </div>
+            <div class="col-md-4 service-box">              
+              <i class="fa-solid fa-industry"></i>
+              <h4>Laje Pré Moldada</h4>
+              <p>Trilhos e lajotas referencias em lajes para piso e teto.</p>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fa-solid fa-person-digging"></i>
+              <h4>Material Bruto</h4>
+              <p>Cimento, areia, brita, telha, vergalhões e outros diversos itens para sua base ser forte. </p>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fa-solid fa-faucet-drip"></i>
+              <h4>Tudos e Conexões</h4>
+              <p>Tubos, curvas, tees, registros soldaveis, de esgoto, galvanizado, de todas marcas e tamanhos. </p>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fa-solid fa-paint-roller"></i>
+              <h4>Itens de acabamento</h4>
+              <p>Tintas, pisos, portas, vasos sanitários e itens para decoração, iluminação e jardinagem.</p>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fa-solid fa-trowel-bricks"></i>              
+              <h4>Blocos de Concreto</h4>
+              <p>Blocos, canaletas, postes, esteios, moirões referencia em qualidade e durabilidade.</p>
+            </div>
+            <div class="col-md-4 service-box">              
+              <i class="bi bi-bricks"></i>
+              <h4>Muros montados</h4>
+              <p>Lances de muros montados em poucas horas, praticidade e comodidade. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Dados da empresa -->
+      <div id="data-area">        
+        <div class="container">
+          <div class="col-12">
+            <h3 class="main-title">Nossos dados</h3>
+          </div>
+          <div class="row">
+            <div class="col-md-3 col-xs-6 circle-box">
+              <div id="circleA"></div>
+              <p>Clientes felizes</p>
+            </div>
+            <div class="col-md-3 col-xs-6 circle-box">
+              <div id="circleB"></div>
+              <p>Produtos cadastrados</p>
+            </div>
+            <div class="col-md-3 col-xs-6 circle-box">
+              <div id="circleC"></div>
+              <p>Colaboradores</p>
+            </div>  
+            <div class="col-md-3 col-xs-6 circle-box">
+              <div id="circleD"></div>
+              <p>Anos de mercado</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Time -->
+      <div id="team-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="main-title">Nosso time</h3>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/juliano.png" class="card-img-top" alt="Imagem de Perfil 1">
+                <div class="card-body">
+                  <h5 class="card-title">Juliano Pan</h5>
+                  <p class="card-text">Vendedor</p>
+                  <button class="main-btn" id="call-btn" onclick="window.open('https://api.whatsapp.com/message/MOKDM5R4TVAKK1?autoload=1&app_absent=0')">Conversar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/cleber.png" class="card-img-top" alt="Imagem de Perfil 2">
+                <div class="card-body">
+                  <h5 class="card-title">Cléber Nogueira</h5>
+                  <p class="card-text">Vendedor</p>
+                  <button class="main-btn" id="call-btn" onclick="window.open('https://api.whatsapp.com/message/MOKDM5R4TVAKK1?autoload=1&app_absent=0')">Conversar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/joaoOtavio.png" class="card-img-top" alt="Imagem de Perfil 3">
+                <div class="card-body">
+                  <h5 class="card-title">João Otávio Pan</h5>
+                  <p class="card-text">Vendedor</p>
+                  <button class="main-btn" id="call-btn" onclick="window.open('https://api.whatsapp.com/message/MOKDM5R4TVAKK1?autoload=1&app_absent=0')">Conversar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/valdinei.png" class="card-img-top" alt="Imagem de Perfil 4">
+                <div class="card-body">
+                  <h5 class="card-title">Valdinei Ferreira</h5>
+                  <p class="card-text">Vendedor</p>
+                  <button class="main-btn" id="call-btn" onclick="window.open('https://api.whatsapp.com/message/MOKDM5R4TVAKK1?autoload=1&app_absent=0')">Conversar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/clinton.png" class="card-img-top" alt="Imagem de Perfil 4">
+                <div class="card-body">
+                  <h5 class="card-title">Clinton Nogueira</h5>
+                  <p class="card-text">Auxiliar de Escritório</p>
+                  <button class="main-btn" id="call-btn" onclick="window.open('https://api.whatsapp.com/message/MOKDM5R4TVAKK1?autoload=1&app_absent=0')">Conversar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/simone.png" class="card-img-top" alt="Imagem de Perfil 4">
+                <div class="card-body">
+                  <h5 class="card-title">Simone Beijo</h5>
+                  <p class="card-text">Secretária</p>
+                  <button class="main-btn" id="call-btn" onclick="window.open('https://api.whatsapp.com/message/MOKDM5R4TVAKK1?autoload=1&app_absent=0')">Conversar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/ricardo.jpg" class="card-img-top" alt="Imagem de Perfil 4">
+                <div class="card-body">
+                  <h5 class="card-title">Ricardo Oliveira</h5>
+                  <p class="card-text">Vendedor</p>
+                  <button class="main-btn" id="call-btn" onclick="window.open('https://api.whatsapp.com/message/MOKDM5R4TVAKK1?autoload=1&app_absent=0')">Conversar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/marcelo.png" class="card-img-top" alt="Imagem de Perfil 4">
+                <div class="card-body">
+                  <h5 class="card-title">Marcelo Moreira</h5>
+                  <p class="card-text">Engenheiro</p>
+                  <button class="main-btn" id="call-btn" onclick="window.open('https://api.whatsapp.com/message/MOKDM5R4TVAKK1?autoload=1&app_absent=0')">Conversar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Newsletter -->
+      <div id="news-area">
+        <div class="container">
+          <div class="col-md-12">
+            <h3 class="main-title">Onde estamos </h3>
+          </div>
+          <p>Centro de Alterosa, com amplo estacionamento para melhor te atender</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1105.4665672402161!2d-46.143608701214426!3d-21.258341918422826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b5e1fe9cafee17%3A0xf1ce0bf7ccc2b8b!2sSerra%20Negra%20Materiais%20para%20Constru%C3%A7%C3%A3o%20LTDA!5e0!3m2!1spt-BR!2sbr!4v1714507007999!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <!-- Call to Action -->
+      <div id="call-area">
+        <div class="container">
+            <div class="row">
+              <p>Deseja fazer um orçamento sem compromisso?</p>
+              <button class="main-btn" id="call-btn" onclick="window.open('https://api.whatsapp.com/message/MOKDM5R4TVAKK1?autoload=1&app_absent=0')">Orçar no WhatsApp</button>
+            </div>
+          </div>
+      </div>
     </div>
-  </section>
-
+  </main>
+  <!-- Rodapé -->
   <footer>
-    <div class="content">
-      <section class="redes">
-        <h2>Redes Sociais</h2>
-        <ul>
-          <li> <a href="https://www.instagram.com/serranegra.mc/" target="_blank">
-              <img src="/fotos/insta.jpg" width="30vw" height="30vw" alt="Instagram">
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/Serra.negra.mc1990" target="_blank">
-              <img src="/fotos/face.jpg" width="30vw" height="30vw" alt="Facebook">
-            </a>
-          </li>
+    <div id="contact-area">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="main-title">Entre em contato conosco</h3>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-phone"></i>
+              <p><span class="contact-tile">Ligue para:</span> <a href="tel:+553532941140">(35) 3294-1140</a></p>
+              <p><span class="contact-tile">Segunda a Sexta:</span> 06:30 - 17:30</p>
+              <p><span class="contact-tile">Sábado: </span> 06:30 - 11:30</p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-envelope"></i>
+              <p><span class="contact-tile">Envie um email:</span> <a href="mailto:serranegramc@redenets.com.br">serranegramc@redenets.com.br</a></p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-map-marker-alt"></i>
+              <p><span class="contact-tile">Venha tomar um café:</span> <a href="https://www.google.com/maps/place/Serra+Negra+Materiais+para+Construção+LTDA/@-21.2582832,-46.1437887,19.5z/data=!4m6!3m5!1s0x94b5e1fe9cafee17:0xf1ce0bf7ccc2b8b!8m2!3d-21.2582096!4d-46.1438623!16s%2Fg%2F11grqrygb1?authuser=1&entry=ttu"> Avenida da Saudade, 49, Cruzeiro, Alterosa-MG</p>
 
-        </ul>
-
-      </section>
-      <section class="media">
-        <h2>Endereço</h2>
-        <ul>
-          <li>
-            Avenida da Saudade, 49, <br> Cruzeiro Alterosa/MG
-          </li>
-        </ul>
-        <h2>Horario de Funcionamento</h2>
-        <ul>
-          <li>Segunda a Sexta</li>
-          <li>6:30 - 17:30</li>
-          <li>Sabados</li>
-          <li>6:30 - 11:30</li>
-      </section>
-      <section class="fones">
-        <h2>Fones</h2>
-        <ul>
-          <li> 35 3294-1140 </li>
-          <li> 35 3294-2204</li>
-          <li> 35 99877-9281</li>
-          <li> 35 99835-8053</li>
-        </ul>
-
-      </section>
-
-
+              
+            </div>            
+          </div>
+      </div>
     </div>
-    <hr>
-    <p>&copy; 2024 Serra Negra Materiais para Construção LTDA. Todos os direitos reservados.</p>
+    <div id="copy-area">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+              <p>Desenvolvido por <a href="https://github.com/clintonsilvas" target="_blank">Clinton Nogueira</a> &copy; 2024</p>
+            </div>
+        </div>
+      </div>
+    </div>
   </footer>
-  <script src="mobile-navbar.js"></script>
+  <!-- Scripts do projeto -->
+  <script src="js/scripts.js"></script>
 </body>
-
 </html>
